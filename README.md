@@ -10,7 +10,7 @@ Built for Global Innovation Hackathon 2026, theme *Innovate Without Borders*.
 
 | | |
 | --- | --- |
-| Web app | `<paste your deployed URL>` |
+| Web app | `https://safesaathi.onrender.com/` |
 | Telegram bot | `<paste t.me/YourBotName>` |
 | API docs | `<your URL>/docs` |
 | Demo video | `<paste the YouTube link>` |
