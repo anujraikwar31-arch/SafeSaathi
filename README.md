@@ -14,7 +14,7 @@ Built for Global Innovation Hackathon 2026, theme *Innovate Without Borders*.
 | Telegram bot | `<paste t.me/YourBotName>` |
 | API docs | `<your URL>/docs` |
 | Demo video | `<paste the YouTube link>` |
-| Team | `<team name>` - `<member 1>`, `<member 2>`, `<member 3>`, `<member 4>`, `<member 5>`, `<member 6>` |
+| Team | `TechTonic` - `Anuj Raikwar`, `Om Priyanshu`, `Anwesh Narayan Mund`, `Aakriti Pathak`, `Sukriti Kamani`, `Anwesha Kundu` |
 
 ![Check a message](docs/screenshots/web-result.png)
 
