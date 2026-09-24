@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SafeSaathi - scam check</title>
+<meta name="description" content="Forward any suspicious message, link or UPI ID and find out in seconds whether it is a scam, and why.">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="/">SafeSaathi</a>
+  <nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/docs">API</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Not sure if it's a scam? <span class="accent">Forward it.</span></h1>
+    <p class="lede">Paste a message, a link or a UPI ID, or add a screenshot. You get a clear answer,
+      the reasons behind it, and what to do next, in your own language.</p>
+  </section>
+
+  <section class="card">
+    <textarea id="content" placeholder="Paste the message, link or UPI ID here..."></textarea>
+    <div class="row">
+      <label class="file">Add screenshot<input type="file" id="file" accept="image/*"></label>
+      <select id="lang" aria-label="Reply language">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="ta">Tamil</option>
+        <option value="bn">Bengali</option>
+        <option value="mr">Marathi</option>
+        <option value="te">Telugu</option>
+      </select>
+      <button id="check">Check</button>
+      <button id="clear" class="secondary">Clear</button>
+    </div>
+    <div id="filename" class="hint"></div>
+    <div class="examples">
+      Try an example:
+      <button data-ex="Dear consumer, your electricity connection will be disconnected tonight at 9:30 PM as your last bill was not updated. Call officer 9876543221 immediately.">Electricity bill</button>
+      <button data-ex="Dear Customer, your KYC has expired and your account will be BLOCKED today. Update now: http://kyc-update-bnk.in Share the OTP when our executive calls.">KYC link</button>
+      <button data-ex="Congratulations! You are selected for a part-time job. Earn Rs 5,000 daily by liking YouTube videos. Pay Rs 499 registration fee to start. Contact HR on WhatsApp.">Task job</button>
+      <button data-ex="Rs 2,000 cashback received! Accept the request and enter your UPI PIN to claim it now.">UPI cashback</button>
+      <button data-ex="Your OTP for the transaction of Rs 2,499 is 887312. Do not share this OTP with anyone. - HDFC Bank">Genuine bank SMS</button>
+    </div>
+  </section>
+
+  <section id="result" class="card result" hidden></section>
+
+  <p class="foot">We do not keep your message. Only an anonymised fingerprint, the verdict and a
+    digit-masked snippet are stored, so a repeat of the same scam can be answered instantly.
+    Cyber fraud helpline: 1930 &middot; <a href="https://cybercrime.gov.in">cybercrime.gov.in</a></p>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

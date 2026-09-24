@@ -1,0 +1,24 @@
+# Render blueprint: New > Blueprint > point it at this repo.
+# Or do it by hand: New > Web Service > Docker > health check /health.
+services:
+  - type: web
+    name: safesaathi
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_SECRET
+        generateValue: true
+      - key: SAFE_BROWSING_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        value: "*"

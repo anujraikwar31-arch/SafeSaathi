@@ -1,0 +1,29 @@
+# Versions below are the ones this build was tested with.
+
+# Core API
+fastapi==0.141.1
+uvicorn[standard]==0.46.0
+python-multipart==0.0.26
+httpx==0.28.1
+pydantic==2.13.3
+SQLAlchemy==2.0.54
+
+# Classifier. scikit-learn MUST match the version ml/train.py ran with,
+# otherwise loading scam_clf.joblib warns or fails.
+scikit-learn==1.6.1
+joblib==1.4.2
+numpy==1.26.4
+scipy==1.13.1
+
+# Voice replies
+gTTS==2.5.4
+
+# Reading screenshots without Gemini (needs the tesseract binary, in the Dockerfile)
+pytesseract==0.3.13
+Pillow==12.2.0
+
+# Optional: Gemini. The app runs fine with no API key.
+google-genai>=1.0.0
+
+# Optional: Postgres / Supabase. Not needed for the SQLite default.
+psycopg[binary]>=3.2

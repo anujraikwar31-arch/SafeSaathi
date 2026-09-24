@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SafeSaathi - scam radar</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="/">SafeSaathi</a>
+  <nav>
+    <a href="/">Check a message</a>
+    <a href="/docs">API</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Scam radar</h1>
+    <p class="lede">What SafeSaathi has been asked about. Test runs are excluded.
+      The page refreshes every 30 seconds.</p>
+  </section>
+
+  <div class="tiles" id="tiles"></div>
+
+  <section class="card">
+    <h3>Scam types people report</h3>
+    <div class="bars" id="categories"></div>
+  </section>
+
+  <section class="card">
+    <h3>Checks per day</h3>
+    <div id="daily"></div>
+  </section>
+
+  <section class="card">
+    <h3>Trending messages</h3>
+    <p class="hint">Digits are masked. Each row is one scam template, however many people forwarded it.</p>
+    <table id="trending"><thead><tr><th>Message</th><th>Type</th><th>Times</th></tr></thead><tbody></tbody></table>
+  </section>
+</main>
+
+<script src="/static/dashboard.js"></script>
+</body>
+</html>
